@@ -1,4 +1,4 @@
-create table utilisateurs
+create table Utilisateurs
 (
     id_utilisateur INT primary key,
     nom VARCHAR(250) not null,
@@ -8,12 +8,12 @@ create table utilisateurs
     mot_de_passe VARCHAR(250) not null
 );
 
-create table Fichiers_partagés
+create table Fichiers_Partagés
 (
     id_fichier INT PRIMARY KEY,
     titre VARCHAR(250) not null,
     description TEXT not null,
-    chemin TEXT not null,
+    url TEXT not null,
     date_de_partage DATE not null,
     id_utilisateur INT not null,
     FOREIGN KEY (ID_Utilisateur) REFERENCES Utilisateurs(ID_Utilisateur)
@@ -42,7 +42,7 @@ CREATE TABLE Notes (
     FOREIGN KEY (ID_matiere) REFERENCES Matieres(ID_matiere)
 );
 
-CREATE TABLE Emplois_du_temps (
+CREATE TABLE Emplois_Du_Temps (
     ID_emploi_du_temps INT PRIMARY KEY,
     ID_matiere INT,
     ID_utilisateur INT,
