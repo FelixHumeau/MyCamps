@@ -2,7 +2,7 @@
 
 nav {
   height: 80px;
-  background: linear-gradient(to right, theme.$common-purple, theme.$common-red);
+  background: blue;
 
   div {
     height: 100%;
@@ -10,8 +10,8 @@ nav {
     align-items: center;
 
     img {
-      margin-left: 20px;
-      height: 60px;
+      margin-left: 27px;
+      height: 80px;
       transition: .3s;
 
       &:hover {
